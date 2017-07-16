@@ -1,0 +1,23 @@
+<div class="container">
+<h1>Upload Picture</h1>
+<div class='user-form'>
+  <%=link_to user_pictures_path, :class=> 'btn btn-primary btn-xs' do %> <i class="glyphicon glyphicon-chevron-left"></i>Back
+  <% end %>
+</div>
+
+<%=form_for [@user, @picture], :html=>{:multipart=>true} do |f| %>
+<div class="user-form">
+  <label>Select picture</label>
+  <%=f.file_field :image, {:class=> 'input-md'} %>
+</div>
+<div class="user-form">
+  <label>Description</label>
+  <%=f.text_area :description, {:rows=> 4, :maxlength => '140', :class=> 'formcontrol input-md'} %>
+</div>
+<div class="user-form">
+  <div class='col-sm-offset-2 col-sm-10'>
+    <%=f.submit 'submit', class: 'btn btn-primary btn-sm' %>
+  </div>
+</div>
+<% end %>
+</div>

@@ -1,0 +1,93 @@
+// Place all the styles related to the Pictures controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.row {
+	margin-top: 50px;
+}
+
+.jumbotron h1 {
+	color: #333;
+	font-size: 40px;
+	padding-bottom: 10px;
+}
+
+a:visited {
+	color: #fff;
+}
+
+.jumbotron p {
+    color: #333;
+}
+
+.glyphicon-chevron-left {
+	color: #fff;
+}
+
+a.form-back {
+	color: #fff;
+}
+
+.formcontrol{
+  color: #333;
+}
+#sidebar-mobile {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+   #sidebar-desktop {
+  	display: none;
+  }
+
+  .jumbotron #sidebar-mobile {
+  	display: block;
+  }
+
+  .jumbotron .list-group-mobile {
+  	margin-left: auto;
+  	margin-right: auto;
+  	
+  }
+
+  .jumbotron .list-group-mobile ul {
+  	list-style: none;
+  	display: inline-block;
+  	margin-left: auto;
+  	margin-right: auto;
+
+  }
+  .jumbotron .list-group-mobile ul li {
+  	display: inline-block;
+  	width: 170px;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  }
+
+  .jumbotron .list-group-mobile li:hover {
+  	background-color: #ddd;
+  }
+
+  .jumbotron .list-group-mobile ul li a {
+    color: #337ab7;
+  }
+  
+  .jumbotron .list-group-mobile ul li a:hover {
+  	color: #333;
+  	background-color: #ddd;
+  }
+
+
+}
+
+@media screen and (max-width: 685px) {
+ .jumbotron h1 {
+   font-size: 30px;
+	}
+ .jumbotron .list-group-mobile ul {
+   display: inline-block;
+	}
+ .jumbotron .list-group-mobile ul li {
+   width: 70px;
+   display: inline-block;
+   }
+}

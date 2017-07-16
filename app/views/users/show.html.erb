@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<h1 class="user-header">User Information</h1>
+<div class="user-info">
+<p class="user-info info" style="padding-top:100px;">
+  <strong>Firstname:&nbsp;&nbsp;</strong>
+  <%= @user.firstname %>
+</p>
+
+<p class="user-info info">
+  <strong>Lastname:&nbsp;&nbsp;</strong>
+  <%= @user.lastname %>
+</p>
+
+<p class="user-info info">
+  <strong>Email:&nbsp;&nbsp;</strong>
+  <%= @user.email %>
+</p>
+</div>
+
+
+<div class="white-text">
+  <%= link_to 'Edit Profile', edit_user_path(@user) %>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <%= link_to 'Upload Files', user_pictures_path(@user) %> &nbsp;&nbsp;|&nbsp;&nbsp;
+  <%= link_to 'Log Out', users_path %>
+</div
